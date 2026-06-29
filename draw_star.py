@@ -3,7 +3,7 @@ import turtle
 def draw_star(size, color):
     screen = turtle.Screen()
     screen.bgcolor("black")
-    screen.title(f"Manual Merge Demo - Star Size {size}")
+    screen.title(f"Manual Merge Demo - Resolved Star Size {size}")
     
     t = turtle.Turtle()
     t.speed(3)
@@ -14,8 +14,13 @@ def draw_star(size, color):
         t.forward(size)
         t.right(144)
     
+    t.penup()
+    t.goto(-80, -100)
+    t.color("white")
+    t.write("Manual Merge: Compromise!", font=("Arial", 12, "bold"))
+    
     t.hideturtle()
     screen.exitonclick()
 
 if __name__ == "__main__":
-    draw_star(50, "cyan")
+    draw_star(150, "gold")
