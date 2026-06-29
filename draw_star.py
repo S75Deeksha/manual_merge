@@ -18,4 +18,4 @@ def draw_star(size, color):
     screen.exitonclick()
 
 if __name__ == "__main__":
-    draw_star(100, "white")
+    draw_star(100, "lime")
